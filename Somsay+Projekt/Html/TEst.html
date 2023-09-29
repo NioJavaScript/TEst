@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kfz-Werkstatt Wagner, Norderstedt</title>
+  <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+
+<body>
+  <header>
+    <a id="backlink" href="TEst.html"><img src="../img/KfzW.png" alt="Startseite"></a>
+    <p>Kfz-Werkstatt Wagner, <br> Seit 1914 am Start</p>
+
+  </header>
+  <h1>Kfz-Werkstatt Wagner, die Werkstatt ihres Vertrauens</h1>
+  <h2>Navigation:</h2>
+
+  <nav>
+    <ul id="navigation">
+      <li><a class="active" tabindex=0 aria-current="page">Startseite</a></li>
+      <li><a href="Mitarbeiter.html">Bilder von unseren fröhlichen Mitarbeitern</a></li>
+      <li><a href="preise.html">Produkte und ihre Preise</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+    </ul>
+  </nav>
+  <section id="leistungen">
+    <h2>Was wir alles anbieten:</h2>
+    <ul>
+      <li>Tuning:</li>
+      <ul>
+        <li>Felgen</li>
+        <li>Spoiler</li>
+        <li>Neuer Motor</li>
+        <li>Chips</li>
+        <li>Karosserie</li>
+        <li>Fahrwerk</li>
+        <li>Auspuff</li>
+        <li>Frontscheinwerfer und Rücklicht</li>
+      </ul>
+      </li>
+      <li>Gebrauchtwagen</li>
+      <li>Frontscheiben-Austausch</li>
+      <li>Reparaturen im Allgemeinen</li>
+    </ul>
+
+    <aside id="angebot">
+      <h3>Angebot - Jetzt zuschlagen!</h3>
+      <p>Gebrauchtwagen sind bis zu 5% günstiger!</p>
+    </aside>
+  </section>
+  <section>
+    <p>Wir sind jederzeit bereit!</p>
+  </section>
+  <footer>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="impressum.html">Impressum</a>
+    <p>©Franz-Hans Wagner - Alle Rechte Vorbehalten</p>
+  </footer>
+
+  <script>
+    'use strict';
+    let name = '',
+      alter = '',
+      eingabe = '',
+      text = '';
+    const erwachsen = 18;
+    name = prompt('Bitte geben Sie Ihren Namen ein!', name);
+    alter = prompt('Bitte geben Sie Ihr Alter ein!', alter);
+    if (isNaN(alter)) {
+      eingabe = 'dumm';
+    }
+    else if (alter < erwachsen) {
+      eingabe = 'jung';
+    } else {
+      eingabe = 'ok';
+    }
+    switch (eingabe) {
+      case 'jung':
+        text = 'Du bist leider zu jung!';
+        break;
+      case 'dumm':
+        text = 'Entweder sind sie zu doof eine Zahl hinzuschreiben, oder sie haben die Zahl als ganzes Wort geschrieben, was man nicht tun sollte...';
+        break;
+      default:
+        text = `Hallo ${name}!`;
+
+        break;
+    }
+    alert(text);
+  </script>
+
+  ...
+</body>
+
+</html>
